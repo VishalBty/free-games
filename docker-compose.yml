@@ -1,0 +1,16 @@
+version: '3'
+services:
+  service.simplegame:
+    image: boypt/cloud-game
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+      - "50012:50012"
+      - "50012:50012/udp"
+    environment:
+      AUTH: "username:password"
+      TITLE: "MySimpleGame"
+    volumes:
+      - ./downloads:/srv/downloads
+      - ./cloud-game.yaml:/etc/cloud-game.yaml
+    command: ["-c", "/etc/cloud-game.yaml"]

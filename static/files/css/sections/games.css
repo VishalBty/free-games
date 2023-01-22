@@ -1,0 +1,93 @@
+section.games {
+	margin-bottom: 20px;
+}
+
+.game {
+	opacity: 0.95;
+	min-height: 10px;
+}
+
+.game.open {
+	opacity: 1
+}
+
+.game .info .name,
+.game .info .hash {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.game .info .name {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.game .info .starttime {
+	font-size: 0.75rem;
+}
+
+.game .info .speed {
+	margin-top: 0.5rem;
+	font-size: 0.75rem;
+}
+
+.game .info .speed span.label {
+	margin-bottom: 0.5em;
+}
+
+.game .info .progress {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+}
+
+.game .status {
+	margin-top: 1.3rem;
+}
+
+.game .status .muted {
+	color: lightgray;
+}
+
+.game .gameinfobar .label {
+	margin-left: 0.1em;
+	margin-bottom: 0.5em;
+}
+
+.game .controls.column {
+	/*padding-top: 5px;*/
+	text-align: right;
+}
+
+.game .stopped.row .column {
+	padding: 0 100px;
+	text-align: center;
+	font-size: 0.75rem;
+}
+
+.game .download.file td.name > div.progress {
+	font-weight: bold;
+	font-size: small;
+	margin: 0;
+}
+
+.game .download.file td.name > div.progress div.bar {
+	height: 0.8em;
+}
+
+.game .download.file .name .percent {
+	display: inline-block;
+	width: 60px;
+}
+
+.game .download.file span.name {
+	overflow: hidden;
+}
+
+.game .downloads thead tr th.size {
+	width: 110px;
+}
+.game .downloads tfoot tr th {
+	font-weight: bold;
+	font-size: 0.85rem;
+}

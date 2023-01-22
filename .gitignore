@@ -1,0 +1,9 @@
+vendor
+downloads
+games
+cloud-game*
+simple-game*
+tmp/
+play*.yml
+.vscode
+.game.bolt.db
